@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cube {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            transition: transform 4s;
+        }
+        
+        .cube-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: aqua;
+            background-size: 100% 100%;
+            background-position: center;
+            transition: background-position 1s;
+        }
+        
+        .cube-face-front {
+            transform: translateZ(100px);
+            background-color: red;
+        }
+        
+        .cube-face-back {
+            transform: translateZ(-100px) rotateY(180deg);
+            background-color: orange;
+        }
+        
+        .cube-face-left {
+            transform: translateX(-100px) rotateY(-90deg);
+            background-color: green;
+        }
+        
+        .cube-face-right {
+            transform: translateX(100px) rotateY(90deg);
+            background-color: blue;
+        }
+        
+        .cube-face-top {
+            transform: translateY(-100px) rotateX(90deg);
+            background-color: yellow;
+        }
+        
+        .cube-face-bottom {
+            transform: translateY(100px) rotateX(-90deg);
+            background-color: white;
+        }
+        
+        .cube:hover {
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+
+        
+        .cube:hover .cube-face-front {
+            background-position: right bottom;
+        }
+        
+        .cube:hover .cube-face-back {
+            background-position: left top;
+        }
+        
+        .cube:hover .cube-face-left {
+            background-position: right top;
+        }
+        
+        .cube:hover .cube-face-right {
+            background-position: left bottom;
+        }
+        
+        .cube:hover .cube-face-top {
+            background-position: left bottom;
+        }
+        
+        .cube:hover .cube-face-bottom {
+            background-position: right top;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cube">
+        <div class="cube-face cube-face-front">
+            <h2>前面</h2>
+        </div>
+        <div class="cube-face cube-face-back">
+            <h2>後面</h2>
+        </div>
+        <div class="cube-face cube-face-left">
+            <h2>左側</h2>
+        </div>
+        <div class="cube-face cube-face-right">
+            <h2>右側</h2>
+        </div>
+        <div class="cube-face cube-face-top">
+            <h2>頂部</h2>
+        </div>
+        <div class="cube-face cube-face-bottom">
+            <h2>底部</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>

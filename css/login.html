@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+
+        .container{
+            width: 600px;
+            height: 400px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Login{
+            background-color: beige;
+            border-top-left-radius: 20px;
+            width: 500px;
+            height: 300px;
+            margin: 20px 40px 40px 20px;
+
+        }
+        
+        .Login-information{
+            text-align: center;
+            margin: 20px auto;
+            font-size: 2em;
+        }
+
+        .display{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        .display label{
+            margin: 10px auto;
+        }
+
+        .container1{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px auto;
+        }
+
+        .container1 a{
+            text-decoration: none;
+        }
+
+        input[type="text"]{
+            height: 30px;
+            width: 350px;
+            color: rgb(75, 71, 63);
+        }
+
+        input[type="password"]{
+            height: 30px;
+            width: 350px;
+            color: rgb(75, 71, 63);
+        }
+
+        input[type="submit"]{
+            height: 40px;
+            width: 100px;
+            background-color: aqua;
+            color: white;
+            font-weight: bold;
+        }
+
+        a{
+            color: rgb(130, 207, 238);
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="Login">
+            <div class="Login-information">Login-Information</div>
+
+            <div>
+                <from class="display">
+                    <label for="username"></label>
+                    <input type="text" placeholder="Enter Username">
+                    
+                    <label for="userpassword"></label>
+                    <input type="password" placeholder="Enter Password">
+                </from>
+            </div>
+                
+            <div class="container1">
+                <div class="submit">
+                    <input type="submit" value="Login">
+                </div>
+
+                <div>
+                    <a href="">Forgot your password?</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

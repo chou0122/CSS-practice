@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>相框練習</title>
+  </head>
+  <style>
+    .container {
+      width: 1280px;
+      padding: 20px;
+      background-color: black;
+      margin: auto;
+    }
+    #photos {
+      list-style: none;
+      overflow: auto;
+      margin: 0;
+      padding: 0;
+    }
+    .photo {
+      width: 200px;
+      height: 200px;
+      display: block;
+      float: right;
+      padding: 20px;
+      margin-right: 10px;
+      background: #000;
+      border: 1px solid blue;
+    }
+    .photo img {
+      max-width: 100%;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <ul id="photos">
+        <li class="photo">
+          <img src="../../02_CSS2進階/imgs/bread.jpg" alt="404" />
+        </li>
+        <li class="photo">
+          <img src="../../02_CSS2進階/imgs/greek-salad.jpg" alt="404" />
+        </li>
+        <li class="photo">
+          <img src="../../02_CSS2進階/imgs/greek-salad.jpg" alt="404" />
+        </li>
+        <li class="photo">
+          <img src="../../02_CSS2進階/imgs/mozzarella.jpg" alt="404" />
+        </li>
+        <li class="photo">
+          <img src="../../02_CSS2進階/imgs/bread.jpg" alt="404" />
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

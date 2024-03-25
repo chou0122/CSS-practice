@@ -1,0 +1,10 @@
+/* *{@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;500;900&family=Noto+Serif+TC:wght@200;400;600;900&display=swap'); */
+ *{font-family: 'Noto Serif TC', serif;}
+h1{
+    color: red;
+}
+.test1{
+    color: aqua;
+    /* font: bold; */
+    font-size: 12em;
+}

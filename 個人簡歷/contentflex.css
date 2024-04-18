@@ -86,7 +86,7 @@ body {
     color: rgb(189, 189, 189);
 }
 .photoshadow{
-    box-shadow: -5px 5px 0px rgb(133, 61, 61);
+    box-shadow: -10px 10px 0px rgb(133, 61, 61);
 }
 .photo {
     display: flex;
@@ -97,7 +97,7 @@ body {
     font-size: 20px;
 }
 .crossline{
-    background-color: #723636;
+    background-color: white;
     height: 100%;
 }
 .description {
@@ -157,6 +157,10 @@ footer p {
     text-align: center;
     letter-spacing: 1px;
     font-family: "Noto Serif TC";
+}
+.animetion{
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
 }
 @media screen and (max-width:500px){
     .header {
